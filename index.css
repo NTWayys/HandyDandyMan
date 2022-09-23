@@ -93,17 +93,17 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-hero > .container > div h1 {
     -webkit-text-stroke-width: 3px;
   }
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-hero > .container > div h1 {
     font-size: 10rem;
   }
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-hero > .container > div h1 {
     flex-direction: row;
   }
@@ -115,7 +115,7 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-hero > .container > div h1 .side-text {
     width: 10rem;
     rotate: 90deg;
@@ -133,7 +133,7 @@ a:hover {
   display: flex;
   justify-content: center;
 }
-@media (width > 550px) {
+@media screen and (min-width: 550px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-user-prompt {
     padding: 2rem;
   }
@@ -146,7 +146,7 @@ a:hover {
   flex-direction: column;
   gap: 1rem;
 }
-@media (width > 850px) {
+@media screen and (min-width: 850px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-user-prompt > .container {
     flex-direction: row;
   }
@@ -173,7 +173,7 @@ a:hover {
   font-size: 1.3rem;
   width: 20rem;
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy > .handy-dandy-front-page > .handy-dandy-user-prompt > .container .right-bot-bar p {
     width: 65%;
   }
@@ -197,12 +197,12 @@ a:hover {
   padding: 3rem;
   text-align: center;
 }
-@media (width > 550px) {
+@media screen and (min-width: 550px) {
   .handy-dandy .handy-dandy-who-we-are > .container .handy-dandy-about-us {
     width: 60%;
   }
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy .handy-dandy-who-we-are > .container .handy-dandy-about-us {
     width: 45%;
   }
@@ -248,12 +248,12 @@ a:hover {
   border-radius: 10px;
   margin: 0 1rem;
 }
-@media (width > 550px) {
+@media screen and (min-width: 550px) {
   .handy-dandy .handy-dandy-services > .container .handy-dandy-services-list > ul li {
     width: 40%;
   }
 }
-@media (width > 1000px) {
+@media screen and (min-width: 1000px) {
   .handy-dandy .handy-dandy-services > .container .handy-dandy-services-list > ul li {
     width: 20%;
   }
@@ -289,7 +289,7 @@ a:hover {
 .handy-dandy .handy-dandy-services > .container .handy-dandy-services-list-info > div {
   text-align: left;
 }
-@media (width > 850px) {
+@media screen and (min-width: 850px) {
   .handy-dandy .handy-dandy-services > .container .handy-dandy-services-list-info > div {
     width: 45%;
   }
@@ -300,11 +300,12 @@ a:hover {
 }
 .handy-dandy .handy-dandy-services > .container > .active {
   display: flex;
+  position: relative;
 }
-@media (width < 1000px) {
-  .handy-dandy .handy-dandy-services > .container > .active {
-    position: relative;
-  }
+.handy-dandy .handy-dandy-services > .container > .active div {
+  position: relative;
+}
+@media screen and (max-width: 1000px) {
   .handy-dandy .handy-dandy-services > .container > .active .img-div {
     filter: brightness(0.5);
     position: absolute;
@@ -352,13 +353,18 @@ a:hover {
   font-size: 1.4rem;
 }
 .handy-dandy .contact-form .business-info-card .info-card-contact-form #submit-btn {
+  z-index: 100;
   cursor: pointer;
   border-style: none;
   padding: 1rem 2rem;
   border-radius: 5px;
   background-color: rgb(249, 164, 178);
 }
-@media (width < 850px) {
+.handy-dandy .contact-form .business-info-card .info-card-contact-form #submited-text {
+  display: none;
+  font-size: 1.4rem;
+}
+@media screen and (max-width: 850px) {
   .handy-dandy .contact-form .business-info-card {
     text-align: center;
     width: 20rem;
@@ -387,7 +393,7 @@ a:hover {
   margin: 2rem 0;
   display: none;
 }
-@media (width > 850px) {
+@media screen and (min-width: 850px) {
   .handy-dandy .contact-form .business-info-card .info-card-info .info-card-stats {
     display: flex;
     flex-direction: column;
@@ -406,7 +412,7 @@ a:hover {
   margin-top: 0.5rem;
   display: block;
 }
-@media (width > 850px) {
+@media screen and (min-width: 850px) {
   .handy-dandy .contact-form .business-info-card {
     gap: 5rem;
   }
@@ -422,6 +428,16 @@ a:hover {
     font-weight: 900;
     padding-top: 2rem;
   }
+}
+
+footer {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background: #313131;
 }
 
 .contacts {
