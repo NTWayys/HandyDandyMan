@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Dandy Handy Man</title>
+  </head>
+
+  <body>
+    <main class="handy-dandy">
+      <section class="handy-dandy-front-page">
+        <div class="handy-dandy-hero">
+          <div class="container">
+            <div>
+              <h1>
+                <span class="h1-span">
+                  <span id="blue-loop">Handy</span>
+                  <span id="pink-loop">Dandy</span>
+                </span>
+                <span class="side-text">Man</span>
+              </h1>
+              <!-- <p>We do the cutting edge</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="handy-dandy-user-prompt">
+          <div class="container">
+            <div class="left-top-bar">
+              <h2><a href="#contact-us"> Contact us </a></h2>
+              <div class="contacts">
+                <div class="contacts-left">
+                  <p class="contact">
+                    Whatsapp:
+                    <a
+                      target="_blank"
+                      href="https://api.whatsapp.com/send?phone=0824943772"
+                      >082 494 3772</a
+                    >
+                  </p>
+                  <p class="contact">
+                    Email:
+                    <a
+                      href="mailto:nroodt11@gmail.com?subject=Hi%20I'd%20like%20a%20Quote%20on%20the%20Below&body=Hi%20Natasha,"
+                    >
+                      nroodt11@gmail.com
+                    </a>
+                  </p>
+                  <p class="contact">
+                    Phone:
+                    <a href="tel:+27824943772"> 082 494 3772 </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="right-bot-bar">
+              <p>
+                We depend on word of mouth, This ensures quality jobs for all
+                our clients. We work when you call. We pride ourselves with
+                being
+                <span class="key-word">Honest</span>,
+                <span class="key-word">Trustworthy</span> and doing Good (<span
+                  class="key-word"
+                  >Great!</span
+                >) work at a fair price
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="handy-dandy-who-we-are">
+        <div class="container">
+          <div class="handy-dandy-about-us">
+            <h2>Who we are</h2>
+            <p>
+              Handy Dandy is a South African company originating from CapeTown
+              with the goal of helping locals fix their homes. With years of
+              experience you can trust on us to assist to assist with any job
+              BIG or small
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="handy-dandy-services">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="handy-dandy-services-list">
+            <ul id="handy-dandy-services-list">
+              <li
+                onclick="makeActive(event)"
+                id="general"
+                class="general services-list-item active"
+              >
+                General maintenance
+              </li>
+              <li
+                onclick="makeActive(event)"
+                id="carpentry"
+                class="carpentry services-list-item"
+              >
+                Carpentry
+              </li>
+              <li
+                onclick="makeActive(event)"
+                id="painting"
+                class="painting services-list-item"
+              >
+                Painting
+              </li>
+              <li
+                onclick="makeActive(event)"
+                id="tiling"
+                class="tiling services-list-item"
+              >
+                Tiling
+              </li>
+            </ul>
+          </div>
+          <div class="general handy-dandy-services-list-info active">
+            <div class="handy-dandy-services-list-info-left">
+              <div>
+                <p>
+                  We can assist with general house maintenance from cleaning to
+                  repairs
+                </p>
+                <br />
+                <ul>
+                  <li>Demolition</li>
+                  <li>Rubble Removal</li>
+                  <li>Cleaning</li>
+                  <li>Roof Maintenance</li>
+                  <li>Flooring</li>
+                  <li>Gardening</li>
+                  <li>Gate Maintenance</li>
+                </ul>
+              </div>
+            </div>
+            <div class="img-div">
+              <img loading="lazy" src="./images/cleaning.jpg" alt="" />
+            </div>
+          </div>
+          <div class="carpentry handy-dandy-services-list-info">
+            <div class="handy-dandy-services-list-info-left">
+              <div>
+                <p>
+                  We do Carpentry! <br />
+                  Require a new Kitchen?<br />
+                  Perhaps fitting cupboards?<br />
+                  We do that too!
+                </p>
+                <br />
+                <ul>
+                  <li>Cupboards</li>
+                  <li>Kitchen Cabinets</li>
+                  <li>Frames</li>
+                  <li>Tables</li>
+                  <li>Doors</li>
+                </ul>
+              </div>
+            </div>
+            <div class="img-div">
+              <img loading="lazy" src="./images/carpentry.jpg" alt="" />
+            </div>
+          </div>
+          <div class="painting handy-dandy-services-list-info">
+            <div class="handy-dandy-services-list-info-left">
+              <div>
+                <p>We paint all the walls</p>
+                <br />
+                <ul>
+                  <li>Walls</li>
+                  <li>Doors</li>
+                  <li>Roofs</li>
+                  <li>Inside</li>
+                  <li>Outside</li>
+                </ul>
+              </div>
+            </div>
+            <div class="img-div">
+              <img loading="lazy" src="./images/Painting.jpg" alt="" />
+            </div>
+          </div>
+          <div class="tiling handy-dandy-services-list-info">
+            <div class="handy-dandy-services-list-info-left">
+              <div>
+                <p>We tile too!</p>
+                <br />
+                <ul>
+                  <li>Floor Tiles</li>
+                  <li>Wall Tiles</li>
+                  <li>Big Tiles</li>
+                  <li>Small Tiles</li>
+                </ul>
+              </div>
+            </div>
+            <div class="img-div">
+              <img loading="lazy" src="./images/Tiling.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-us" class="contact-form">
+        <div class="business-info-card">
+          <div class="info-card-info">
+            <h3>Get a handy dandy man to <span>beautify</span> your home!</h3>
+            <p>
+              Discover the benefits of letting a handy dandy man repair your
+              homes and offices.
+            </p>
+            <div class="contacts">
+              <div class="contacts-left">
+                <p class="contact">
+                  Whatsapp:
+                  <a
+                    target="_blank"
+                    href="https://api.whatsapp.com/send?phone=0824943772"
+                    >082 494 3772</a
+                  >
+                </p>
+                <p class="contact">
+                  Email:
+                  <a
+                    href="mailto:nroodt11@gmail.com?subject=Hi%20I'd%20like%20a%20Quote%20on%20the%20Below&body=Hi%20Natasha,"
+                  >
+                    nroodt11@gmail.com
+                  </a>
+                </p>
+                <p class="contact">
+                  Phone:
+                  <a href="tel:+27824943772"> 082 494 3772 </a>
+                </p>
+              </div>
+            </div>
+            <div class="info-card-stats">
+              <p>500+<span>JOBS</span></p>
+              <br />
+              <p>200+<span>HOMES</span></p>
+              <br />
+              <p>1000+<span>QUERIES</span></p>
+            </div>
+          </div>
+          <div class="info-card-contact-form">
+            <h3>Let us Contact you</h3>
+            <label for="user-email"
+              >Contact email / Phone number<br /><input
+                type="email"
+                name="user-email"
+                id=""
+                placeholder="Handyman@handydandyman.co.za"
+            /></label>
+            <button id="submit-btn">Submit</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- Gallery  -->
+      </section>
+    </main>
+    <footer>nroodt11@gmail.com</footer>
+  </body>
+</html>
